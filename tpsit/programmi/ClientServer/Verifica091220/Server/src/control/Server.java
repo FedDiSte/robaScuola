@@ -22,8 +22,10 @@ public class Server implements Runnable{
     @Override
     public void run() {
         try{
-            Socket s = serverSocket.accept();
-            new Thread(new HandleLogin(s)).start();
+            do {
+                Socket s = serverSocket.accept();
+                new Thread(new HandleLogin(s)).start();
+            } while (true);
         } catch (IOException e) {
             e.printStackTrace();
         }
