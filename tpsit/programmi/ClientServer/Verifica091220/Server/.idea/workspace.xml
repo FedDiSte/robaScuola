@@ -73,10 +73,19 @@
       <screen x="2736" y="11" width="1920" height="1050" />
     </state>
     <state x="3503" y="243" key="#com.intellij.ide.util.MemberChooser/0.0.1368.882/2736.11.1920.1050@2736.11.1920.1050" timestamp="1607514088664" />
-    <state x="2774" y="36" key="FileChooserDialogImpl" timestamp="1607513635460">
-      <screen x="2736" y="11" width="1920" height="1050" />
+    <state x="27" y="21" key="FileChooserDialogImpl" timestamp="1608462116723">
+      <screen x="0" y="0" width="1368" height="882" />
     </state>
     <state x="27" y="21" key="FileChooserDialogImpl/0.0.1368.882/2736.11.1920.1050@0.0.1368.882" timestamp="1607512142098" />
     <state x="2774" y="36" key="FileChooserDialogImpl/0.0.1368.882/2736.11.1920.1050@2736.11.1920.1050" timestamp="1607513635460" />
+    <state x="27" y="21" key="FileChooserDialogImpl/0.0.1368.882@0.0.1368.882" timestamp="1608462116723" />
+    <state x="3515" y="451" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1607527010193">
+      <screen x="2736" y="11" width="1920" height="1050" />
+    </state>
+    <state x="3515" y="451" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1368.882/2736.11.1920.1050@2736.11.1920.1050" timestamp="1607527010193" />
+    <state x="278" y="63" key="new project wizard" timestamp="1608462123541">
+      <screen x="0" y="0" width="1368" height="882" />
+    </state>
+    <state x="278" y="63" key="new project wizard/0.0.1368.882@0.0.1368.882" timestamp="1608462123541" />
   </component>
 </project>
