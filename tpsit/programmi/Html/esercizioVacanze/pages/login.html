@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="it">
+    <head>
+        <title>Login</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="FedDiSte"/>
+        <link rel="stylesheet" type="text/css" href="css/stileLogin.css"/>
+    </head>
+    <body>
+        <div class="header">
+            <div class="headerRow">
+                <h2>Galleria fotografica</h2>
+            </div>
+        </div>
+        <form id="login" action="index.html" method="POST">
+            <div class="elemento">
+                <input for="nomeUtente" type="text" required><span class="highlight"></span><span class="bar"></span>
+                <label>Nome</label>
+            </div>
+            <div class="elemento">
+                <input for="cognomeUtente" type="text" required><span class="highlight"></span><span class="bar"></span>
+                <label>Cognome</label>
+            </div>
+            <button type="submit" class="button">
+                Accedi alla galleria fotografica
+            </button>
+        </form>
+        <footer>
+            <nav>
+                <a class="footerLinks">Federico Di Stefano</a>
+                <a class="footerLinks" href="https://github.com/FedDiSte">GitHub</a>
+                <a class="footerLinks" href="mailto:fededark0220@gmial.com">Email</a>
+            </nav>
+        </footer>
+        <script src='http://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.2.1.js'></script>
+        <script type="text/javascript">
+                $('input').blur(function() {
+                var $this = $(this);
+                if ($this.val())
+                    $this.addClass('used');
+                else
+                    $this.removeClass('used');
+                });
+        </script>
+        <script type="text/javascript">
+            $(document).ready(function () {
+                resetForms();
+            });
+            function resetForms() {
+                document.forms['login'].reset();
+            }
+        </script>
+    </body>
+</html>

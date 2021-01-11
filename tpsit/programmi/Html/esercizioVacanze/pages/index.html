@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="it">
+    <head>
+        <title>Galleria fotografica</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="FedDiSte"/>
+        <link rel="stylesheet" type="text/css" href="../css/stileGenerale.css"/>
+    </head>
+    <body>
+        <header id="header">
+            <div class="headerRow">
+                <h2>Galleria fotografica</h2>
+            </div>
+        </header>
+        <div class="grigliaPrincipale">
+            <div class="elemento">
+                <div class="imageContainer">
+                    <img src="../assets/velletri1.jpg"/>
+                </div>
+                <div class="contenuti">
+                    <div class="descrizione"><h3>Velletri (RM)</h3></div>
+                    <div class="bottone"><a class="button" href="velletri.html">Apri</a></div>
+                </div>
+            </div>
+            <div class="elemento">
+                <div class="imageContainer">
+                    <img src="../assets/sorrento1.jpg"/>
+                </div>
+                <div class="contenuti">
+                    <div class="descrizione"><h3>Sorrento (NA)</h3></div>
+                    <div class="bottone"><a class="button" href="sorrento.html">Apri</a></div>
+                </div>
+            </div>
+            <div class="elemento">
+                <div class="imageContainer">
+                    <img src="../assets/pompei1.jpg"/>
+                </div>
+                <div class="contenuti">
+                    <div class="descrizione"><h3>Pompei (NA)</h3></div>
+                    <div class="bottone"><a class="button" href="pompei.html">Apri</a></div>
+                </div>
+            </div>
+            <div class="elemento">
+                <div class="imageContainer">
+                    <img src="../assets/faito1.jpg"/>
+                </div>
+                <div class="contenuti">
+                    <div class="descrizione"><h3>Monte Faito(NA)</h3></div>
+                    <div class="bottone"><a class="button" href="faito.html">Apri</a></div>
+                </div>
+            </div>
+            <div class="elemento">
+                <div class="imageContainer">
+                    <img src="../assets/roma1.jpg"/>
+                </div>
+                <div class="contenuti">
+                    <div class="descrizione"><h3>Roma (RM)</h3></div>
+                    <div class="bottone"><a class="button" href="roma.html">Apri</a></div>
+                </div>
+            </div>
+            <div class="elemento">
+                <div class="imageContainer">
+                    <img src="../assets/castellammare1.jpg"/>
+                </div>
+                <div class="contenuti">
+                    <div class="descrizione"><h3>Castellamare di Stabia (NA)</h3></div>
+                    <div class="bottone"><a class="button" href="castellammare.html">Apri</a></div>
+                </div>
+            </div>
+        </div>
+        <footer>
+            <nav>
+                <a class="footerLinks">Federico Di Stefano</a>
+                <a class="footerLinks" href="https://github.com/FedDiSte">GitHub</a>
+                <a class="footerLinks" href="mailto:fededark0220@gmial.com">Email</a>
+            </nav>
+        </footer>
+    <script type="text/javascript">
+        var prevScrollpos = window.pageYOffset;
+        window.onscroll = function() {
+            var currentScrollPos = window.pageYOffset;
+            if (currentScrollPos === 0) {
+                document.getElementById("header").style.top = "0";
+            } else {
+                document.getElementById("header").style.top = "-50px";
+            }
+            prevScrollpos = currentScrollPos;
+        } 
+    </script>
+    </body>
+</html>
