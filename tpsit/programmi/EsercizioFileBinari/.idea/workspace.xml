@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ae7b6591-b335-4b92-8023-860abce5fa1c" name="Default Changelist" comment="" />
+    <list default="true" id="ae7b6591-b335-4b92-8023-860abce5fa1c" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Html/esercizioVacanze.rar" beforeDir="false" afterPath="$PROJECT_DIR$/../Html/esercizioVacanze.rar" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -26,7 +29,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
   <component name="RunManager">
     <configuration name="TestFileBinari" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
@@ -63,35 +66,5 @@
     <ignored-roots>
       <path value="$PROJECT_DIR$/.." />
     </ignored-roots>
-  </component>
-  <component name="WindowStateProjectService">
-    <state x="3471" y="338" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1608547208924">
-      <screen x="2736" y="11" width="1920" height="1050" />
-    </state>
-    <state x="3471" y="338" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1368.888/2736.11.1920.1050@2736.11.1920.1050" timestamp="1608547208924" />
-    <state width="1877" height="285" key="GridCell.Tab.0.bottom" timestamp="1608561711478">
-      <screen x="0" y="0" width="1368" height="888" />
-    </state>
-    <state width="1877" height="285" key="GridCell.Tab.0.bottom/0.0.1368.888/2736.11.1920.1050@0.0.1368.888" timestamp="1608561711478" />
-    <state width="1878" height="285" key="GridCell.Tab.0.bottom/0.0.1368.888/2736.11.1920.1050@2736.11.1920.1050" timestamp="1608547812795" />
-    <state width="1877" height="285" key="GridCell.Tab.0.center" timestamp="1608561711478">
-      <screen x="0" y="0" width="1368" height="888" />
-    </state>
-    <state width="1877" height="285" key="GridCell.Tab.0.center/0.0.1368.888/2736.11.1920.1050@0.0.1368.888" timestamp="1608561711478" />
-    <state width="1878" height="285" key="GridCell.Tab.0.center/0.0.1368.888/2736.11.1920.1050@2736.11.1920.1050" timestamp="1608547812795" />
-    <state width="1877" height="285" key="GridCell.Tab.0.left" timestamp="1608561711478">
-      <screen x="0" y="0" width="1368" height="888" />
-    </state>
-    <state width="1877" height="285" key="GridCell.Tab.0.left/0.0.1368.888/2736.11.1920.1050@0.0.1368.888" timestamp="1608561711478" />
-    <state width="1878" height="285" key="GridCell.Tab.0.left/0.0.1368.888/2736.11.1920.1050@2736.11.1920.1050" timestamp="1608547812790" />
-    <state width="1877" height="285" key="GridCell.Tab.0.right" timestamp="1608561711478">
-      <screen x="0" y="0" width="1368" height="888" />
-    </state>
-    <state width="1877" height="285" key="GridCell.Tab.0.right/0.0.1368.888/2736.11.1920.1050@0.0.1368.888" timestamp="1608561711478" />
-    <state width="1878" height="285" key="GridCell.Tab.0.right/0.0.1368.888/2736.11.1920.1050@2736.11.1920.1050" timestamp="1608547812795" />
-    <state x="922" y="177" key="SettingsEditor" timestamp="1608547987065">
-      <screen x="0" y="0" width="1920" height="1056" />
-    </state>
-    <state x="922" y="177" key="SettingsEditor/0.0.1920.1056@0.0.1920.1056" timestamp="1608547987065" />
   </component>
 </project>
