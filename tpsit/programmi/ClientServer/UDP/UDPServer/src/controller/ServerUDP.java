@@ -1,26 +1,27 @@
 package controller;
 
+import java.io.BufferedReader;
 import java.io.IOException;
+import java.io.InputStreamReader;
 import java.net.DatagramPacket;
 import java.net.DatagramSocket;
-import java.net.InetAddress;
-import java.nio.charset.StandardCharsets;
 
 public class ServerUDP implements Runnable{
 
     private static final int PACKET_SIZE = 1024;
     private DatagramSocket socket;
-    private DatagramPacket datagramPacket;
     private byte[] data;
 
-    private int clientPort;
-    private InetAddress clientAddress;
+    private BufferedReader inTastiera;
+
+    private Controller controller;
 
     public ServerUDP(int port) {
         try {
             socket = new DatagramSocket(port);
             data = new byte[PACKET_SIZE];
-            datagramPacket = new DatagramPacket(data, data.length);
+            inTastiera = new BufferedReader(new InputStreamReader(System.in));
+            controller = new Controller();
         } catch (Exception e) {
             e.printStackTrace();
         }
@@ -29,16 +30,18 @@ public class ServerUDP implements Runnable{
     @Override
     public void run() {
         try {
-            String messaggio = "bella fratm";
-            socket.receive(datagramPacket);
-            log(new String(datagramPacket.getData()));
-            data = messaggio.getBytes();
-
-            clientAddress = datagramPacket.getAddress();
-            clientPort = datagramPacket.getPort();
-
-            socket.send(datagramPacket = new DatagramPacket(data, data.length, clientAddress, clientPort));
-
+            new Thread(new UDPListener(socket, controller)).start();
+            log("Per terminare la comunicazione scrivi 'exit'");
+            String message = null;
+            while(!message.equals("exit")) {
+                message = inTastiera.readLine();
+                data = message.getBytes();
+                if (controller.hasClientIP() && controller.hasClientPort()) {
+                    socket.send(new DatagramPacket(data, data.length, controller.getClientIP(), controller.getClientPort()));
+                } else {
+                    log("Ancora non c'è nessuno qui, aspetta che il client ti invia un messaggio");
+                }
+            }
         } catch (IOException e) {
             e.printStackTrace();
         }
