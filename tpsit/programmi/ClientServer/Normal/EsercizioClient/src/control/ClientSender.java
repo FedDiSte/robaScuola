@@ -11,7 +11,7 @@ import java.sql.Timestamp;
 
 public class ClientSender implements Runnable {
     private Socket client = null;
-    private int porta = 3030;
+    private int porta = 4000;
     private Gui gui = null;
 
     private BufferedReader inTastiera = new BufferedReader(new InputStreamReader(System.in));

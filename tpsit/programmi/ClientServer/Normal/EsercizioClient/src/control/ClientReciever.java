@@ -7,7 +7,7 @@ import java.net.Socket;
 public class ClientReciever implements Runnable{
 
     private Socket client = null;
-    private int porta = 1044;
+    private int porta = 4000;
     private Gui gui = null;
 
     public ClientReciever(Gui gui) {
