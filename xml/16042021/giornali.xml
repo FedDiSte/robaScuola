@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="giornali.xsd" type="application/xml" schematypens="http://www.w3.org/2001/XMLSchema"?>
+<giornale>
+    <articolo>
+        <sottotitolo>Non so cosa scriverci</sottotitolo>
+        <intestazione>Questo è un bellissimo argomento</intestazione>
+        <autore>Federico Di Stefano</autore>
+        <data>2021-10-16</data>
+        <corpo>
+            <testo>
+                Tante parole carine da scrivere in un bel testo
+            </testo>
+        </corpo>
+    </articolo>
+    <articolo>
+        <sottotitolo>Questo è un altro articolo</sottotitolo>
+        <intestazione>Sempre carino</intestazione>
+        <autore>Federico Di Stefano</autore>
+        <data>2021-02-10</data>
+        <corpo>
+            <testo>
+                Anche queste sono parole interessanti giuro
+            </testo>
+            <testo>
+                Boh si ho finito le idee
+            </testo>
+        </corpo>
+    </articolo>
+</giornale>

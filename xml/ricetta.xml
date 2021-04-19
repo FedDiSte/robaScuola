@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="ricetta.xsd" type="application/xml" schematypens="http://www.w3.org/2001/XMLSchema"?>
+<ricetta>
+    <pietanza nome="Pasta al burro"/>
+    <ingredienti>
+        <ingrediente qta="500" um="grammi">Spaghetti</ingrediente>
+        <ingrediente qta="25" um="grammi">Sale</ingrediente>
+        <ingrediente qta="300" um="grammi">Burro</ingrediente>
+        <ingrediente qta="2" um="litri">Acqua</ingrediente>
+    </ingredienti>
+    <procedimento>Boh butta la pasta e cuocila</procedimento>
+</ricetta>

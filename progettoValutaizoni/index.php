@@ -12,7 +12,6 @@ try {
 
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -54,10 +53,17 @@ try {
                 <div class="row justify-content-center">
                     <div class="col-md-auto">
                         <form action="/aggiungiProva.php" method="post">
-                            <label for="data"><input type="date" name="data" id="data" placeholder="Data" require></label>
-                            <label for="voto"><input type="text" name="voto" id="voto" placeholder="Voto" require></label>
-                            <label for="materia"><input type="text" name="materia" id="materia" placeholder="Materia" require></label>
-                            <label for="codiceStudente"><input type="text" name="codiceStudente" id="codiceStudente" placeholder="Codice studente" require></label>
+                            <label for="data"><input type="date" name="data" id="data" placeholder="Data" required></label>
+                            <label for="voto"><input type="text" name="voto" id="voto" placeholder="Voto" required></label>
+                            <label for="materia"><input type="text" name="materia" id="materia" placeholder="Materia" required></label>
+                            <label for="codiceStudente"><select name="codiceStudente" id="codiceStudente" class="dropdown">
+                                    <?php
+                                    $query = $connection->query("select matricola, cognome, nome from studenti");
+                                    foreach ($query as $row) {
+                                        echo "<option value=\"" . $row['matricola'] . "\">" . $row['cognome'] . " " . $row['nome']. "</option>\n";
+                                    }
+                                    ?>
+                                </select></label>
                             <input type="submit" value="Aggiungi questa valutazione" class="button">
                         </form>
                     </div>
@@ -76,7 +82,7 @@ try {
                 <div class="row justify-content-center">
                     <div class="col-md-auto">
                         <form action="/cercaProveClasse.php" method="post">
-                            <label for="classe"><select name="classe" id="classe" class="dropdown">
+                            <label for="classe"><select name="classe" id="classe" class="dropdown" required>
                                     <?php
                                     $query = $connection->query("select distinct classe from studenti");
                                     foreach ($query as $row) {
@@ -104,7 +110,14 @@ try {
                 <div class="row justify-content-center">
                     <div class="col-md-auto">
                         <form action="/proveAlunno.php" method="post">
-                            <label for="codiceAlunno"><input type="text" name="codiceAlunno" id="codiceAlunno" placeholder="Codice alunno" required></label>
+                            <label for="codiceAlunno"><select name="codiceAlunno" id="codiceAlunno" class="dropdown" required>
+                                    <?php
+                                    $query = $connection->query("select matricola, cognome, nome from studenti");
+                                    foreach ($query as $row) {
+                                        echo "<option value=\"" . $row['matricola'] . "\">" . $row['cognome'] . " " . $row['nome']. "</option>\n";
+                                    }
+                                    ?>
+                                </select></label>
                             <input type="submit" value="Visualizza le prove di questo alunno " class="button">
                         </form>
                     </div>
